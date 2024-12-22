@@ -41,23 +41,22 @@
             <div class="form-group">
                 <div class="custom-file">
                     <input required type="file" name="file1" id="file1">
-                    <label class="custom-file-label" for="file1">Первая фотография к товару</label>
+                    <label class="custom-file-label" for="file1">Фотография машины спереди</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="custom-file">
                     <input type="file" name="file2" id="file2">
-                    <label class="custom-file-label" for="file2">Вторая фотография к товару</label>
+                    <label class="custom-file-label" for="file2">Фото авто сзадчи</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="custom-file">
                     <input type="file" name="file3" id="file3">
-                    <label class="custom-file-label" for="file3">Третья фотография к товару</label>
+                    <label class="custom-file-label" for="file3">Фото сзади</label>
                 </div>
             </div>
             <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-
             <button type="submit" style="width: 100%" class="btn btn-dark">Добавить</button>
         </form>
     </div>
