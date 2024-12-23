@@ -18,9 +18,9 @@
 
                     <div class="container">
                         <div class="carousel-caption">
-                            <a href="/images/${image.id}">
-                                <img class="product" style="height: 100px" src="/images/${image.id}">
-                            </a>
+<#--                            <a href="/images/${image.id}">-->
+<#--                                <img class="product" style="height: 100px" src="/images/${image.id}">-->
+<#--                            </a>-->
                         </div>
                     </div>
                 </div>
