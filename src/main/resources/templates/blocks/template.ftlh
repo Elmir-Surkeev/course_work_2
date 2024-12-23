@@ -12,13 +12,13 @@
               integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
               crossorigin="anonymous">
 
-        <title>BUYSELL</title>
+        <title>ARENDA-Auto.kg</title>
     </head>
     <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <a href="/">
-                <span class="navbar-brand mb-0 h1">BUYSELL</span>
+                <span class="navbar-brand mb-0 h1">ARENDA-Auto.kg</span>
             </a>
             <#if user.email??>
                 <div class="dropdown text-end">

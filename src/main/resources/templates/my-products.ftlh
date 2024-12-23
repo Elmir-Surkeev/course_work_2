@@ -1,6 +1,6 @@
 <#import "blocks/template.ftlh" as t>
 <@t.template user>
-    <h1 style="text-align: center">Мои товары</h1>
+    <h1 style="text-align: center">Свободные авто</h1>
     <hr>
     <a class="btn btn-dark mt-3 mb-3" style="text-align: center; width: 100%"
        data-toggle="collapse" href="#collapseExample" role="button"
@@ -10,32 +10,35 @@
     <div class="collapse mb-3" id="collapseExample" style="">
         <form action="/product/create" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="productName">Название товара</label>
+                <label for="productName">Марка авто</label>
                 <input type="text" required class="form-control"
                        id="productName" name="title">
             </div>
             <div class="form-group">
-                <label for="price">Цена товара</label>
+                <label for="price">Аренда в день</label>
                 <div class="input-group mb-3">
                     <input type="number" required class="form-control" id="price" name="price">
                     <div class="input-group-append">
-                        <span class="input-group-text">₽</span>
+                        <span class="input-group-text">Сом</span>
                     </div>
                 </div>
             </div>
             <div class="form-group">
-                <label for="searchCity">Город</label>
+                <label for="searchCity">Город выдачи</label>
                 <select id="searchCity" required name="city" class="form-control">
                     <option value="">Город не выбран</option>
-
-                    <option value="Москва">Москва</option>
-                    <option value="Красноярск">Красноярск</option>
-                    <option value="Казань">Казань</option>
+                    <option value="Бишкек">Бишкек</option>
+                    <option value="Ош">Ош</option>
+                    <option value="Талас">Талас</option>
+                    <option value="Нарын">Нарын</option>
+                    <option value="Чуй">Чуй</option>
+                    <option value="Джалал-Абад">Джалал-Абад</option>
+                    <option value="Ыссык-Кол">Ыссык-Кол</option>
 
                 </select>
             </div>
             <div class="form-group">
-                <label for="description">Описание товара</label>
+                <label for="description">Описание машины</label>
                 <textarea required class="form-control" id="description" name="description"></textarea>
             </div>
             <div class="form-group">
@@ -76,7 +79,7 @@
                          class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">${product.title}</h5>
-                        <p class="card-text">${product.price} ₽</p>
+                        <p class="card-text">${product.price} Сом</p>
                     </div>
                     <div class="card-footer">
                         ${product.city}

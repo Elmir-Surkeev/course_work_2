@@ -1,15 +1,19 @@
 <#import "blocks/template.ftlh" as t>
 <@t.template user>
-    <h1 style="text-align: center">Поиск товаров</h1><hr>
+    <h1 style="text-align: center">Поиск авто</h1><hr>
     <form method="get" action="/">
         <div class="form-row">
             <div class="form-group col-md-2">
                 <label for="searchCity">Город</label>
                 <select id="searchCity" class="form-control">
                     <option value="">Город не выбран</option>
-                    <option value="Москва">Москва</option>
-                    <option value="Красноярск">Красноярск</option>
-                    <option value="Казань">Казань</option>
+                    <option value="Бишкек">Бишкек</option>
+                    <option value="Ош">Ош</option>
+                    <option value="Талас">Талас</option>
+                    <option value="Нарын">Нарын</option>
+                    <option value="Чуй">Чуй</option>
+                    <option value="Джалал-Абад">Джалал-Абад</option>
+                    <option value="Ыссык-Кол">Ыссык-Кол</option>
                 </select>
             </div>
             <div class="form-group col-md-10">
